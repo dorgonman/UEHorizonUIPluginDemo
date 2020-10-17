@@ -20,7 +20,8 @@ variables:
       value: '\\\\hsgame\\UE4-Packaged-build\\nuget\\hsgame-local\\HorizonPlugin'
     - name: Pipeline.NugetAzureDevopsFeedName
       value: 'UE4HorizonPlugin'
-
+    - name: system_accesstoken
+      value: $(System.AccessToken)
 
 parameters:
   - name: bCleanSCM
